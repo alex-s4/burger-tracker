@@ -22,6 +22,7 @@
                         <th>Burger Name</th>
                         <th>Restaurant Name</th>
                         <th>Rating (out of 5)</th>
+                        <th>Action</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -30,6 +31,7 @@
                             <td>${oneBurger.getBurgerName()}</td>
                             <td>${oneBurger.getRestaurantName()}</td>
                             <td>${oneBurger.getRating()}</td>
+                            <td><a href="/burgers/edit/${oneBurger.getId()}">edit</a></td>
                         </tr>
                     </c:forEach>
                 </tbody>

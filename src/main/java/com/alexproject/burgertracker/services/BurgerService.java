@@ -34,6 +34,9 @@ public class BurgerService {
         return null;
     }
 	
+	public Burger updateBurger(Burger modifiedBurger) {
+		return burgerRepository.save(modifiedBurger);
+	}
 	
 	public Burger updateBurger(Long id, String burgerName, String restaurantName, Integer rating, String notes) {
 		Burger burger = this.findBurger(id);
